@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
+		B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */; };
+		B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
+		B9CCD1DE198DE3A800F42436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */; };
+		B9CCD1E0198DE3A800F42436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1DF198DE3A800F42436 /* main.m */; };
+		B9CCD1E4198DE3A800F42436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1E3198DE3A800F42436 /* AppDelegate.m */; };
+		B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1E5198DE3A900F42436 /* Main.storyboard */; };
+		B9CCD1EA198DE3A900F42436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1E9198DE3A900F42436 /* ViewController.m */; };
+		B9CCD1EC198DE3A900F42436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1EB198DE3A900F42436 /* Images.xcassets */; };
+		B9CCD1F3198DE3A900F42436 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1F2198DE3A900F42436 /* XCTest.framework */; };
+		B9CCD1F4198DE3A900F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
+		B9CCD1F5198DE3A900F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
+		B9CCD1FD198DE3A900F42436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */; };
+		B9CCD1FF198DE3A900F42436 /* JewelryAppraisalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9CCD1F6198DE3A900F42436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9CCD1C8198DE3A800F42436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9CCD1CF198DE3A800F42436;
+			remoteInfo = JewelryAppraisal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAppraisal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CCD1D3198DE3A800F42436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9CCD1D7198DE3A800F42436 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9CCD1DB198DE3A800F42436 /* JewelryAppraisal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JewelryAppraisal-Info.plist"; sourceTree = "<group>"; };
+		B9CCD1DD198DE3A800F42436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9CCD1DF198DE3A800F42436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9CCD1E1198DE3A800F42436 /* JewelryAppraisal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JewelryAppraisal-Prefix.pch"; sourceTree = "<group>"; };
+		B9CCD1E2198DE3A800F42436 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9CCD1E3198DE3A800F42436 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9CCD1E6198DE3A900F42436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9CCD1E8198DE3A900F42436 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9CCD1E9198DE3A900F42436 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9CCD1EB198DE3A900F42436 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JewelryAppraisalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CCD1F2198DE3A900F42436 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B9CCD1FA198DE3A900F42436 /* JewelryAppraisalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JewelryAppraisalTests-Info.plist"; sourceTree = "<group>"; };
+		B9CCD1FC198DE3A900F42436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JewelryAppraisalTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9CCD1CD198DE3A800F42436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */,
+				B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */,
+				B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CCD1EE198DE3A900F42436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1F3198DE3A900F42436 /* XCTest.framework in Frameworks */,
+				B9CCD1F5198DE3A900F42436 /* UIKit.framework in Frameworks */,
+				B9CCD1F4198DE3A900F42436 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9CCD1C7198DE3A800F42436 = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1D9198DE3A800F42436 /* JewelryAppraisal */,
+				B9CCD1F8198DE3A900F42436 /* JewelryAppraisalTests */,
+				B9CCD1D2198DE3A800F42436 /* Frameworks */,
+				B9CCD1D1198DE3A800F42436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9CCD1D1198DE3A800F42436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */,
+				B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9CCD1D2198DE3A800F42436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1D3198DE3A800F42436 /* Foundation.framework */,
+				B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */,
+				B9CCD1D7198DE3A800F42436 /* UIKit.framework */,
+				B9CCD1F2198DE3A900F42436 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9CCD1D9198DE3A800F42436 /* JewelryAppraisal */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1E2198DE3A800F42436 /* AppDelegate.h */,
+				B9CCD1E3198DE3A800F42436 /* AppDelegate.m */,
+				B9CCD1E5198DE3A900F42436 /* Main.storyboard */,
+				B9CCD1E8198DE3A900F42436 /* ViewController.h */,
+				B9CCD1E9198DE3A900F42436 /* ViewController.m */,
+				B9CCD1EB198DE3A900F42436 /* Images.xcassets */,
+				B9CCD1DA198DE3A800F42436 /* Supporting Files */,
+			);
+			path = JewelryAppraisal;
+			sourceTree = "<group>";
+		};
+		B9CCD1DA198DE3A800F42436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1DB198DE3A800F42436 /* JewelryAppraisal-Info.plist */,
+				B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */,
+				B9CCD1DF198DE3A800F42436 /* main.m */,
+				B9CCD1E1198DE3A800F42436 /* JewelryAppraisal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9CCD1F8198DE3A900F42436 /* JewelryAppraisalTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */,
+				B9CCD1F9198DE3A900F42436 /* Supporting Files */,
+			);
+			path = JewelryAppraisalTests;
+			sourceTree = "<group>";
+		};
+		B9CCD1F9198DE3A900F42436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD1FA198DE3A900F42436 /* JewelryAppraisalTests-Info.plist */,
+				B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisal" */;
+			buildPhases = (
+				B9CCD1CC198DE3A800F42436 /* Sources */,
+				B9CCD1CD198DE3A800F42436 /* Frameworks */,
+				B9CCD1CE198DE3A800F42436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JewelryAppraisal;
+			productName = JewelryAppraisal;
+			productReference = B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9CCD1F0198DE3A900F42436 /* JewelryAppraisalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisalTests" */;
+			buildPhases = (
+				B9CCD1ED198DE3A900F42436 /* Sources */,
+				B9CCD1EE198DE3A900F42436 /* Frameworks */,
+				B9CCD1EF198DE3A900F42436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9CCD1F7198DE3A900F42436 /* PBXTargetDependency */,
+			);
+			name = JewelryAppraisalTests;
+			productName = JewelryAppraisalTests;
+			productReference = B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9CCD1C8198DE3A800F42436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Lorne Lantz";
+				TargetAttributes = {
+					B9CCD1F0198DE3A900F42436 = {
+						TestTargetID = B9CCD1CF198DE3A800F42436;
+					};
+				};
+			};
+			buildConfigurationList = B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "JewelryAppraisal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9CCD1C7198DE3A800F42436;
+			productRefGroup = B9CCD1D1198DE3A800F42436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */,
+				B9CCD1F0198DE3A900F42436 /* JewelryAppraisalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9CCD1CE198DE3A800F42436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1EC198DE3A900F42436 /* Images.xcassets in Resources */,
+				B9CCD1DE198DE3A800F42436 /* InfoPlist.strings in Resources */,
+				B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CCD1EF198DE3A900F42436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1FD198DE3A900F42436 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9CCD1CC198DE3A800F42436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1EA198DE3A900F42436 /* ViewController.m in Sources */,
+				B9CCD1E4198DE3A800F42436 /* AppDelegate.m in Sources */,
+				B9CCD1E0198DE3A800F42436 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9CCD1ED198DE3A900F42436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CCD1FF198DE3A900F42436 /* JewelryAppraisalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9CCD1F7198DE3A900F42436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */;
+			targetProxy = B9CCD1F6198DE3A900F42436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CCD1DD198DE3A800F42436 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9CCD1E5198DE3A900F42436 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CCD1E6198DE3A900F42436 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CCD1FC198DE3A900F42436 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9CCD200198DE3A900F42436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9CCD201198DE3A900F42436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9CCD203198DE3A900F42436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
+				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9CCD204198DE3A900F42436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
+				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9CCD206198DE3A900F42436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JewelryAppraisal.app/JewelryAppraisal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JewelryAppraisalTests/JewelryAppraisalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B9CCD207198DE3A900F42436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JewelryAppraisal.app/JewelryAppraisal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
+				INFOPLIST_FILE = "JewelryAppraisalTests/JewelryAppraisalTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "JewelryAppraisal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CCD200198DE3A900F42436 /* Debug */,
+				B9CCD201198DE3A900F42436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CCD203198DE3A900F42436 /* Debug */,
+				B9CCD204198DE3A900F42436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CCD206198DE3A900F42436 /* Debug */,
+				B9CCD207198DE3A900F42436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9CCD1C8198DE3A800F42436 /* Project object */;
+}
