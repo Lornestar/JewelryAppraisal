@@ -46,14 +46,19 @@
     //business name
     if (appdel.currentappraisal.businessname)
     {
-        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(700, 150+yoffset, 1400, 230) fontsize:40.0f];
+        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(700, 150+yoffset, 1400, 230) fontsize:50.0f];
     }
     
+    //appraisal title
+    if (appdel.currentappraisal.title)
+    {
+        [self drawText:appdel.currentappraisal.title inFrame:CGRectMake(100, 440, 1000, 30) fontsize:30.0f];
+    }
     
     //description
     if (appdel.currentappraisal.description)
     {
-        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 450 + yoffset, 2100, 350) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 480 + yoffset, 2100, 350) fontsize:25.0f];
     }
     
     //draw images
@@ -103,7 +108,10 @@
     //show signature
     if (appdel.currentappraisal.signature)
     {
-        [self drawImage:appdel.currentappraisal.signature.image inRect:CGRectMake(100, 1400, 600, 400)];
+        UIImage * PortraitImage = [[UIImage alloc] initWithCGImage: appdel.currentappraisal.signature.image.CGImage
+                                                             scale: 1.0
+                                                       orientation: UIImageOrientationLeft];
+        [self drawImage:PortraitImage inRect:CGRectMake(100, 1400, 600, 400) ];
     }
     
     //show appraiser's name
@@ -112,11 +120,40 @@
         [self drawText:appdel.currentappraisal.appraisername inFrame:CGRectMake(100, 1850, 1400, 100) fontsize:25.0f];
     }
     
+    //show today's date
+    NSDate *currDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    
+    dateFormatter.dateFormat=@"MMMM";
+    NSString *monthString = [[dateFormatter stringFromDate:currDate] capitalizedString];
+    
+    [dateFormatter setDateFormat:@"MM YYYY"];
+    NSString *dateString = [NSString stringWithFormat:@"%@ %@",monthString, [dateFormatter stringFromDate:currDate]];
+    [self drawText:dateString inFrame:CGRectMake(1000, 1850, 400, 100) fontsize:25.0f];
+    
     //show appraiser's accolades
     if (appdel.currentappraisal.appraisercertification)
     {
         [self drawText:appdel.currentappraisal.appraisercertification inFrame:CGRectMake(100, 2000, 1400, 150) fontsize:20.0f];
     }
+    
+    //show website
+    if (appdel.currentappraisal.website) {
+        [self drawText:appdel.currentappraisal.website inFrame:CGRectMake(600, 2100, 400, 30) fontsize:20.0f];
+    }
+    
+    //show address
+    if (appdel.currentappraisal.address)
+    {
+        [self drawText:appdel.currentappraisal.address inFrame:CGRectMake(600, 2130, 400, 30) fontsize:20.0f];
+    }
+    
+    //show phone number
+    if (appdel.currentappraisal.phonenumber)
+    {
+        [self drawText:appdel.currentappraisal.phonenumber inFrame:CGRectMake(600, 2160, 400, 30) fontsize:20.0f];
+    }
+    
     
     // Close the PDF context and write the contents out.
     UIGraphicsEndPDFContext();

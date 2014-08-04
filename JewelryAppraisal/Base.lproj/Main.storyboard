@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtBusinessName_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="Ha3-wH-QYt"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="rFN-L1-TBD"/>
@@ -84,7 +84,7 @@
                                         <rect key="frame" x="0.0" y="38" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtAppraisersName_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="sEq-os-o6e"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="Nxc-oL-nKk"/>
@@ -104,47 +104,33 @@
                                         <rect key="frame" x="0.0" y="183" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtWebsite_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="v81-qe-eTp"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="MpM-wJ-c6j"/>
                                         </connections>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIk-OH-A23">
-                                        <rect key="frame" x="3" y="221" width="277" height="68"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="ZFO-kU-lfz" id="sHj-W7-PPZ"/>
-                                        </connections>
-                                    </textView>
                                     <textField opaque="NO" clipsSubviews="YES" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-DG-ehR">
-                                        <rect key="frame" x="0.0" y="297" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="259" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="zFV-oG-gof"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address, City, State, Zip Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-BA-vJk">
+                                        <rect key="frame" x="0.0" y="221" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="ZFO-kU-lfz" id="1ec-1u-cHI"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3Z-Wc-bGk">
-                                <rect key="frame" x="110" y="422" width="100" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.79607850309999995" green="0.79607850309999995" blue="0.79607850309999995" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnSave_Clicked:" destination="ZFO-kU-lfz" eventType="touchUpInside" id="vim-X3-U4S"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oik-9L-O3I">
                                 <rect key="frame" x="20" y="20" width="16" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -165,7 +151,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="txtAddress" destination="DIk-OH-A23" id="zzc-kb-fGN"/>
+                        <outlet property="txtAddress" destination="vtx-BA-vJk" id="50Z-By-Rfc"/>
                         <outlet property="txtAppraiserCertification" destination="a3g-og-bly" id="B09-CW-oG4"/>
                         <outlet property="txtAppraisersName" destination="cuH-vg-xnF" id="wP1-Tz-dDs"/>
                         <outlet property="txtBusinessName" destination="XKf-xM-aC5" id="WYn-mw-8aA"/>
@@ -224,7 +210,7 @@
                                 <rect key="frame" x="20" y="94" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="txtTitle_Done:" destination="1xr-Hd-Yja" eventType="editingDidEnd" id="jGG-zs-Ac6"/>
                                     <outlet property="delegate" destination="1xr-Hd-Yja" id="L9z-ZG-RsG"/>
@@ -234,7 +220,7 @@
                                 <rect key="frame" x="20" y="132" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                 <connections>
                                     <action selector="txtDollarValue_Done:" destination="1xr-Hd-Yja" eventType="editingDidEnd" id="UFx-Fp-rWw"/>
                                     <outlet property="delegate" destination="1xr-Hd-Yja" id="ciT-wI-MuO"/>

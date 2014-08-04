@@ -77,11 +77,6 @@
     {
         txtAddress.text = appdel.currentappraisal.address;
     }
-    else
-    {
-        txtAddress.text = txtAddressstatic;
-        txtAddress.textColor = [UIColor lightGrayColor];
-    }
     
     if (appdel.currentappraisal.phonenumber.length > 0)
     {
@@ -183,6 +178,10 @@
     {
         [self ResetTextFields:3];
     }
+    else if (textField.tag == 104)
+    {
+        [self ResetTextFields:4];
+    }
     else if (textField.tag == 105)
     {
         [self ResetTextFields:5];
@@ -220,10 +219,10 @@
         {
             txtAppraiserCertification.text = txtAppraiserCertificationstatic;
         }
-        else if (textView.tag == 104)
+  /*      else if (textView.tag == 104)
         {
             txtAddress.text = txtAddressstatic;
-        }
+        }*/
         textView.textColor = [UIColor lightGrayColor]; //optional
     }
     
@@ -236,14 +235,14 @@
  replacementText:(NSString *)text
 {
     // Any new character added is passed in as the "text" parameter
-    if ([text isEqualToString:@"\n"]) {
+    /*if ([text isEqualToString:@"\n"]) {
         // Be sure to test for equality using the "isEqualToString" message
         [textView resignFirstResponder];
         [self ResetTextFields:0];
         
         // Return FALSE so that the final '\n' character doesn't get added
         return FALSE;
-    }
+    }*/
     // For any other character return TRUE so that the text gets added to the view
     return TRUE;
 }

@@ -50,7 +50,7 @@
     [PDFRenderer drawPDF:[self getPDFFileName]];
     
     
-    /*UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+/*    UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     
     NSURL *url = [NSURL fileURLWithPath:[self getPDFFileName]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
