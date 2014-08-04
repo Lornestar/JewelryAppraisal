@@ -74,7 +74,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtBusinessName_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="Ha3-wH-QYt"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="rFN-L1-TBD"/>
@@ -84,7 +84,7 @@
                                         <rect key="frame" x="0.0" y="38" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtAppraisersName_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="sEq-os-o6e"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="Nxc-oL-nKk"/>
@@ -104,7 +104,7 @@
                                         <rect key="frame" x="0.0" y="183" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="done"/>
                                         <connections>
                                             <action selector="txtWebsite_Done:" destination="ZFO-kU-lfz" eventType="editingDidEnd" id="v81-qe-eTp"/>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="MpM-wJ-c6j"/>
@@ -114,7 +114,7 @@
                                         <rect key="frame" x="0.0" y="259" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="zFV-oG-gof"/>
                                         </connections>
@@ -123,7 +123,7 @@
                                         <rect key="frame" x="0.0" y="221" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="delegate" destination="ZFO-kU-lfz" id="1ec-1u-cHI"/>
                                         </connections>
@@ -210,7 +210,7 @@
                                 <rect key="frame" x="20" y="94" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                 <connections>
                                     <action selector="txtTitle_Done:" destination="1xr-Hd-Yja" eventType="editingDidEnd" id="jGG-zs-Ac6"/>
                                     <outlet property="delegate" destination="1xr-Hd-Yja" id="L9z-ZG-RsG"/>
@@ -220,7 +220,7 @@
                                 <rect key="frame" x="20" y="132" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done"/>
                                 <connections>
                                     <action selector="txtDollarValue_Done:" destination="1xr-Hd-Yja" eventType="editingDidEnd" id="UFx-Fp-rWw"/>
                                     <outlet property="delegate" destination="1xr-Hd-Yja" id="ciT-wI-MuO"/>
@@ -259,6 +259,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4U-Ib-F2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1219" y="-101"/>
+        </scene>
+        <!--PreviewPDF View Controller-->
+        <scene sceneID="qkK-NZ-mbS">
+            <objects>
+                <viewController storyboardIdentifier="PreviewPDF" id="RKp-7f-q9n" customClass="PreviewPDFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WLI-9c-gHM"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXw-US-vGz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rZI-Ox-Zob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsv-ti-I5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="-101"/>
         </scene>
         <!--Appraisal View Controller-->
         <scene sceneID="0cU-BY-1ag">

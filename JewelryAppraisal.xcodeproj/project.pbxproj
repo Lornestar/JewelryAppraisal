@@ -22,6 +22,7 @@
 		B91C92A8198F3C050035308E /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92A7198F3C050035308E /* PDFRenderer.m */; };
 		B91C92AA198F5A980035308E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92A9198F5A980035308E /* CoreText.framework */; };
 		B91C92AC198F747B0035308E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92AB198F747B0035308E /* MessageUI.framework */; };
+		B91C92AF1990085A0035308E /* PreviewPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92AE1990085A0035308E /* PreviewPDFViewController.m */; };
 		B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
 		B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */; };
 		B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
@@ -83,6 +84,8 @@
 		B91C92A7198F3C050035308E /* PDFRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFRenderer.m; sourceTree = "<group>"; };
 		B91C92A9198F5A980035308E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B91C92AB198F747B0035308E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B91C92AD1990085A0035308E /* PreviewPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewPDFViewController.h; sourceTree = "<group>"; };
+		B91C92AE1990085A0035308E /* PreviewPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewPDFViewController.m; sourceTree = "<group>"; };
 		B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAppraisal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1D3198DE3A800F42436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -289,6 +292,8 @@
 				B91C92A0198F1FCF0035308E /* AppraisalTemplateViewController.m */,
 				B91C92A2198F399E0035308E /* EmailAppraisalViewController.h */,
 				B91C92A3198F399E0035308E /* EmailAppraisalViewController.m */,
+				B91C92AD1990085A0035308E /* PreviewPDFViewController.h */,
+				B91C92AE1990085A0035308E /* PreviewPDFViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				B91C9296198EC9F70035308E /* StandardPaths.m in Sources */,
 				B9CCD22A198DE98000F42436 /* AppraisalDetailsViewController.m in Sources */,
 				B91C9294198EC9F70035308E /* EIOperationManager.m in Sources */,
+				B91C92AF1990085A0035308E /* PreviewPDFViewController.m in Sources */,
 				B91C9295198EC9F70035308E /* NSData+Storage.m in Sources */,
 				B9CCD1E0198DE3A800F42436 /* main.m in Sources */,
 				B91C9293198EC9F70035308E /* EIImagePickerDelegate.m in Sources */,

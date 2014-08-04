@@ -50,7 +50,7 @@
 
 -(void)UpdateMenuItems:(UIViewController*)thenewvc{
 
-    self.menu = [NSArray arrayWithObjects:@"Edit Appraisal", @"Email Appraisal", @"Clear Appraisal", @"Sent Appraisals", @"Appraisal Template", nil];
+    self.menu = [NSArray arrayWithObjects:@"Edit Appraisal", @"Clear Appraisal", @"Sent Appraisals", @"Appraisal Template", @"Email Appraisal", @"Preview PDF", nil];
     
     /*
     if ([thenewvc isKindOfClass:[RegisterViewController class]]){
@@ -198,6 +198,10 @@
     else if ([identifier isEqualToString:@"Email Appraisal"])
     {
         [self GotoViewController:@"Email"];
+    }
+    else if ([identifier isEqualToString:@"Preview PDF"])
+    {
+        [self GotoViewController:@"PreviewPDF"];
     }
     
 }

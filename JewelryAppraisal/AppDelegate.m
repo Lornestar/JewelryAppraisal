@@ -72,7 +72,7 @@
     currentappraisal.appraisercertification = [defaults objectForKey:@"appraisercertification"];
     currentappraisal.website = [defaults objectForKey:@"website"];
     currentappraisal.address = [defaults objectForKey:@"address"];
-    currentappraisal.address = [defaults objectForKey:@"phonenumber"];
+    currentappraisal.phonenumber = [defaults objectForKey:@"phonenumber"];
     
 }
 

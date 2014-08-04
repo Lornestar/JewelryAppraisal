@@ -54,14 +54,21 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
-    
     CGRect frame = CGRectMake(20, 63, 255, 442);
-    sigview = [[SignatureView alloc] initWithFrame:frame];
-    [sigview setBackgroundColor:[UIColor whiteColor]];
+    //if signature available
+    if (appdel.currentappraisal.signature)
+    {
+        sigview = appdel.currentappraisal.signature;
+    }
+    else
+    {
+        sigview = [[SignatureView alloc] initWithFrame:frame];
+        [sigview setBackgroundColor:[UIColor whiteColor]];
+    }    
     [self.view addSubview:sigview];
 }
 
--(void)viewDidDisappear:(BOOL)animated
+-(void)viewWillDisappear:(BOOL)animated
 {
     appdel.currentappraisal.signature = sigview;
 }

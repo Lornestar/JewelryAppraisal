@@ -111,7 +111,7 @@
         UIImage * PortraitImage = [[UIImage alloc] initWithCGImage: appdel.currentappraisal.signature.image.CGImage
                                                              scale: 1.0
                                                        orientation: UIImageOrientationLeft];
-        [self drawImage:PortraitImage inRect:CGRectMake(100, 1400, 600, 400) ];
+        [self drawImage:PortraitImage inRect:CGRectMake(100, 1220, 600, 400) ];
     }
     
     //show appraiser's name
