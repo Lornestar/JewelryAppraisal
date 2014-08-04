@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91C9280198DEF380035308E /* AppraisalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C927F198DEF380035308E /* AppraisalViewController.m */; };
+		B91C9283198DF1D90035308E /* menuicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B91C9282198DF1D90035308E /* menuicon.png */; };
+		B91C9285198E13E00035308E /* addimageicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B91C9284198E13E00035308E /* addimageicon.png */; };
+		B91C9293198EC9F70035308E /* EIImagePickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C9288198EC9F70035308E /* EIImagePickerDelegate.m */; };
+		B91C9294198EC9F70035308E /* EIOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C928A198EC9F70035308E /* EIOperationManager.m */; };
+		B91C9295198EC9F70035308E /* NSData+Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C928D198EC9F70035308E /* NSData+Storage.m */; };
+		B91C9296198EC9F70035308E /* StandardPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C9290198EC9F70035308E /* StandardPaths.m */; };
+		B91C9297198EC9F70035308E /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C9292198EC9F70035308E /* UIImage+Resize.m */; };
+		B91C929A198ED3B70035308E /* Appraisal.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C9299198ED3B70035308E /* Appraisal.m */; };
+		B91C929E198EECEC0035308E /* SignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C929D198EECEC0035308E /* SignatureView.m */; };
+		B91C92A1198F1FCF0035308E /* AppraisalTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92A0198F1FCF0035308E /* AppraisalTemplateViewController.m */; };
+		B91C92A4198F399E0035308E /* EmailAppraisalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92A3198F399E0035308E /* EmailAppraisalViewController.m */; };
+		B91C92A8198F3C050035308E /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92A7198F3C050035308E /* PDFRenderer.m */; };
+		B91C92AA198F5A980035308E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92A9198F5A980035308E /* CoreText.framework */; };
+		B91C92AC198F747B0035308E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92AB198F747B0035308E /* MessageUI.framework */; };
 		B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
 		B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */; };
 		B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
@@ -14,13 +29,20 @@
 		B9CCD1E0198DE3A800F42436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1DF198DE3A800F42436 /* main.m */; };
 		B9CCD1E4198DE3A800F42436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1E3198DE3A800F42436 /* AppDelegate.m */; };
 		B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1E5198DE3A900F42436 /* Main.storyboard */; };
-		B9CCD1EA198DE3A900F42436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1E9198DE3A900F42436 /* ViewController.m */; };
 		B9CCD1EC198DE3A900F42436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1EB198DE3A900F42436 /* Images.xcassets */; };
 		B9CCD1F3198DE3A900F42436 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1F2198DE3A900F42436 /* XCTest.framework */; };
 		B9CCD1F4198DE3A900F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
 		B9CCD1F5198DE3A900F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
 		B9CCD1FD198DE3A900F42436 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */; };
 		B9CCD1FF198DE3A900F42436 /* JewelryAppraisalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */; };
+		B9CCD217198DE61900F42436 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD20D198DE61900F42436 /* ECSlidingViewController.m */; };
+		B9CCD218198DE61900F42436 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD20F198DE61900F42436 /* InitViewController.m */; };
+		B9CCD219198DE61900F42436 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD211198DE61900F42436 /* MenuViewController.m */; };
+		B9CCD21A198DE61900F42436 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD213198DE61900F42436 /* UIImage+ImageWithUIView.m */; };
+		B9CCD21B198DE61900F42436 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD216198DE61900F42436 /* MBProgressHUD.m */; };
+		B9CCD22A198DE98000F42436 /* AppraisalDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD229198DE98000F42436 /* AppraisalDetailsViewController.m */; };
+		B9CCD22D198DE9C600F42436 /* AppraisalPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD22C198DE9C600F42436 /* AppraisalPicturesViewController.m */; };
+		B9CCD230198DE9D500F42436 /* AppraisalSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CCD22F198DE9D500F42436 /* AppraisalSignatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +56,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B91C927E198DEF380035308E /* AppraisalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraisalViewController.h; sourceTree = "<group>"; };
+		B91C927F198DEF380035308E /* AppraisalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraisalViewController.m; sourceTree = "<group>"; };
+		B91C9282198DF1D90035308E /* menuicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon.png; sourceTree = "<group>"; };
+		B91C9284198E13E00035308E /* addimageicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addimageicon.png; sourceTree = "<group>"; };
+		B91C9287198EC9F70035308E /* EIImagePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIImagePickerDelegate.h; sourceTree = "<group>"; };
+		B91C9288198EC9F70035308E /* EIImagePickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIImagePickerDelegate.m; sourceTree = "<group>"; };
+		B91C9289198EC9F70035308E /* EIOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EIOperationManager.h; sourceTree = "<group>"; };
+		B91C928A198EC9F70035308E /* EIOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EIOperationManager.m; sourceTree = "<group>"; };
+		B91C928B198EC9F70035308E /* EssentialImager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssentialImager.h; sourceTree = "<group>"; };
+		B91C928C198EC9F70035308E /* NSData+Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Storage.h"; sourceTree = "<group>"; };
+		B91C928D198EC9F70035308E /* NSData+Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Storage.m"; sourceTree = "<group>"; };
+		B91C928F198EC9F70035308E /* StandardPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardPaths.h; sourceTree = "<group>"; };
+		B91C9290198EC9F70035308E /* StandardPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardPaths.m; sourceTree = "<group>"; };
+		B91C9291198EC9F70035308E /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		B91C9292198EC9F70035308E /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		B91C9298198ED3B70035308E /* Appraisal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appraisal.h; sourceTree = "<group>"; };
+		B91C9299198ED3B70035308E /* Appraisal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appraisal.m; sourceTree = "<group>"; };
+		B91C929C198EECEC0035308E /* SignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureView.h; sourceTree = "<group>"; };
+		B91C929D198EECEC0035308E /* SignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignatureView.m; sourceTree = "<group>"; };
+		B91C929F198F1FCF0035308E /* AppraisalTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraisalTemplateViewController.h; sourceTree = "<group>"; };
+		B91C92A0198F1FCF0035308E /* AppraisalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraisalTemplateViewController.m; sourceTree = "<group>"; };
+		B91C92A2198F399E0035308E /* EmailAppraisalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailAppraisalViewController.h; sourceTree = "<group>"; };
+		B91C92A3198F399E0035308E /* EmailAppraisalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailAppraisalViewController.m; sourceTree = "<group>"; };
+		B91C92A6198F3C050035308E /* PDFRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFRenderer.h; sourceTree = "<group>"; };
+		B91C92A7198F3C050035308E /* PDFRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFRenderer.m; sourceTree = "<group>"; };
+		B91C92A9198F5A980035308E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B91C92AB198F747B0035308E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAppraisal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1D3198DE3A800F42436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +94,28 @@
 		B9CCD1E2198DE3A800F42436 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9CCD1E3198DE3A800F42436 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B9CCD1E6198DE3A900F42436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B9CCD1E8198DE3A900F42436 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B9CCD1E9198DE3A900F42436 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B9CCD1EB198DE3A900F42436 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JewelryAppraisalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1F2198DE3A900F42436 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B9CCD1FA198DE3A900F42436 /* JewelryAppraisalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JewelryAppraisalTests-Info.plist"; sourceTree = "<group>"; };
 		B9CCD1FC198DE3A900F42436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JewelryAppraisalTests.m; sourceTree = "<group>"; };
+		B9CCD20C198DE61900F42436 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		B9CCD20D198DE61900F42436 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		B9CCD20E198DE61900F42436 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		B9CCD20F198DE61900F42436 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		B9CCD210198DE61900F42436 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B9CCD211198DE61900F42436 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B9CCD212198DE61900F42436 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		B9CCD213198DE61900F42436 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		B9CCD215198DE61900F42436 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B9CCD216198DE61900F42436 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B9CCD228198DE98000F42436 /* AppraisalDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraisalDetailsViewController.h; sourceTree = "<group>"; };
+		B9CCD229198DE98000F42436 /* AppraisalDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraisalDetailsViewController.m; sourceTree = "<group>"; };
+		B9CCD22B198DE9C600F42436 /* AppraisalPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraisalPicturesViewController.h; sourceTree = "<group>"; };
+		B9CCD22C198DE9C600F42436 /* AppraisalPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraisalPicturesViewController.m; sourceTree = "<group>"; };
+		B9CCD22E198DE9D500F42436 /* AppraisalSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraisalSignatureViewController.h; sourceTree = "<group>"; };
+		B9CCD22F198DE9D500F42436 /* AppraisalSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraisalSignatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C92AC198F747B0035308E /* MessageUI.framework in Frameworks */,
+				B91C92AA198F5A980035308E /* CoreText.framework in Frameworks */,
 				B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */,
 				B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */,
 				B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */,
@@ -79,6 +144,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B91C9281198DF1D90035308E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B91C9284198E13E00035308E /* addimageicon.png */,
+				B91C9282198DF1D90035308E /* menuicon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B91C9286198EC9F70035308E /* EssentialImager */ = {
+			isa = PBXGroup;
+			children = (
+				B91C9287198EC9F70035308E /* EIImagePickerDelegate.h */,
+				B91C9288198EC9F70035308E /* EIImagePickerDelegate.m */,
+				B91C9289198EC9F70035308E /* EIOperationManager.h */,
+				B91C928A198EC9F70035308E /* EIOperationManager.m */,
+				B91C928B198EC9F70035308E /* EssentialImager.h */,
+				B91C928C198EC9F70035308E /* NSData+Storage.h */,
+				B91C928D198EC9F70035308E /* NSData+Storage.m */,
+				B91C928E198EC9F70035308E /* StandardPaths */,
+				B91C9291198EC9F70035308E /* UIImage+Resize.h */,
+				B91C9292198EC9F70035308E /* UIImage+Resize.m */,
+			);
+			path = EssentialImager;
+			sourceTree = "<group>";
+		};
+		B91C928E198EC9F70035308E /* StandardPaths */ = {
+			isa = PBXGroup;
+			children = (
+				B91C928F198EC9F70035308E /* StandardPaths.h */,
+				B91C9290198EC9F70035308E /* StandardPaths.m */,
+			);
+			path = StandardPaths;
+			sourceTree = "<group>";
+		};
+		B91C929B198EECEC0035308E /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				B91C929C198EECEC0035308E /* SignatureView.h */,
+				B91C929D198EECEC0035308E /* SignatureView.m */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		B91C92A5198F3C050035308E /* PDFRender */ = {
+			isa = PBXGroup;
+			children = (
+				B91C92A6198F3C050035308E /* PDFRenderer.h */,
+				B91C92A7198F3C050035308E /* PDFRenderer.m */,
+			);
+			path = PDFRender;
+			sourceTree = "<group>";
+		};
 		B9CCD1C7198DE3A800F42436 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +219,8 @@
 		B9CCD1D2198DE3A800F42436 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91C92AB198F747B0035308E /* MessageUI.framework */,
+				B91C92A9198F5A980035308E /* CoreText.framework */,
 				B9CCD1D3198DE3A800F42436 /* Foundation.framework */,
 				B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */,
 				B9CCD1D7198DE3A800F42436 /* UIKit.framework */,
@@ -112,11 +232,12 @@
 		B9CCD1D9198DE3A800F42436 /* JewelryAppraisal */ = {
 			isa = PBXGroup;
 			children = (
+				B9CCD20A198DE61900F42436 /* Addins */,
+				B9CCD209198DE3EA00F42436 /* Models */,
+				B9CCD208198DE3DE00F42436 /* ViewControllers */,
 				B9CCD1E2198DE3A800F42436 /* AppDelegate.h */,
 				B9CCD1E3198DE3A800F42436 /* AppDelegate.m */,
 				B9CCD1E5198DE3A900F42436 /* Main.storyboard */,
-				B9CCD1E8198DE3A900F42436 /* ViewController.h */,
-				B9CCD1E9198DE3A900F42436 /* ViewController.m */,
 				B9CCD1EB198DE3A900F42436 /* Images.xcassets */,
 				B9CCD1DA198DE3A800F42436 /* Supporting Files */,
 			);
@@ -126,6 +247,7 @@
 		B9CCD1DA198DE3A800F42436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B91C9281198DF1D90035308E /* Images */,
 				B9CCD1DB198DE3A800F42436 /* JewelryAppraisal-Info.plist */,
 				B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */,
 				B9CCD1DF198DE3A800F42436 /* main.m */,
@@ -150,6 +272,70 @@
 				B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9CCD208198DE3DE00F42436 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD228198DE98000F42436 /* AppraisalDetailsViewController.h */,
+				B9CCD229198DE98000F42436 /* AppraisalDetailsViewController.m */,
+				B9CCD22B198DE9C600F42436 /* AppraisalPicturesViewController.h */,
+				B9CCD22C198DE9C600F42436 /* AppraisalPicturesViewController.m */,
+				B9CCD22E198DE9D500F42436 /* AppraisalSignatureViewController.h */,
+				B9CCD22F198DE9D500F42436 /* AppraisalSignatureViewController.m */,
+				B91C927E198DEF380035308E /* AppraisalViewController.h */,
+				B91C927F198DEF380035308E /* AppraisalViewController.m */,
+				B91C929F198F1FCF0035308E /* AppraisalTemplateViewController.h */,
+				B91C92A0198F1FCF0035308E /* AppraisalTemplateViewController.m */,
+				B91C92A2198F399E0035308E /* EmailAppraisalViewController.h */,
+				B91C92A3198F399E0035308E /* EmailAppraisalViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9CCD209198DE3EA00F42436 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B91C9298198ED3B70035308E /* Appraisal.h */,
+				B91C9299198ED3B70035308E /* Appraisal.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B9CCD20A198DE61900F42436 /* Addins */ = {
+			isa = PBXGroup;
+			children = (
+				B91C92A5198F3C050035308E /* PDFRender */,
+				B91C929B198EECEC0035308E /* Signature */,
+				B91C9286198EC9F70035308E /* EssentialImager */,
+				B9CCD20B198DE61900F42436 /* ECSlidingViewController */,
+				B9CCD214198DE61900F42436 /* MBProgressHUD */,
+			);
+			path = Addins;
+			sourceTree = "<group>";
+		};
+		B9CCD20B198DE61900F42436 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD20C198DE61900F42436 /* ECSlidingViewController.h */,
+				B9CCD20D198DE61900F42436 /* ECSlidingViewController.m */,
+				B9CCD20E198DE61900F42436 /* InitViewController.h */,
+				B9CCD20F198DE61900F42436 /* InitViewController.m */,
+				B9CCD210198DE61900F42436 /* MenuViewController.h */,
+				B9CCD211198DE61900F42436 /* MenuViewController.m */,
+				B9CCD212198DE61900F42436 /* UIImage+ImageWithUIView.h */,
+				B9CCD213198DE61900F42436 /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		B9CCD214198DE61900F42436 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B9CCD215198DE61900F42436 /* MBProgressHUD.h */,
+				B9CCD216198DE61900F42436 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +415,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CCD1EC198DE3A900F42436 /* Images.xcassets in Resources */,
+				B91C9283198DF1D90035308E /* menuicon.png in Resources */,
 				B9CCD1DE198DE3A800F42436 /* InfoPlist.strings in Resources */,
 				B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */,
+				B91C9285198E13E00035308E /* addimageicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +437,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CCD1EA198DE3A900F42436 /* ViewController.m in Sources */,
+				B9CCD21A198DE61900F42436 /* UIImage+ImageWithUIView.m in Sources */,
+				B91C92A1198F1FCF0035308E /* AppraisalTemplateViewController.m in Sources */,
 				B9CCD1E4198DE3A800F42436 /* AppDelegate.m in Sources */,
+				B91C929A198ED3B70035308E /* Appraisal.m in Sources */,
+				B91C92A8198F3C050035308E /* PDFRenderer.m in Sources */,
+				B91C929E198EECEC0035308E /* SignatureView.m in Sources */,
+				B91C92A4198F399E0035308E /* EmailAppraisalViewController.m in Sources */,
+				B91C9296198EC9F70035308E /* StandardPaths.m in Sources */,
+				B9CCD22A198DE98000F42436 /* AppraisalDetailsViewController.m in Sources */,
+				B91C9294198EC9F70035308E /* EIOperationManager.m in Sources */,
+				B91C9295198EC9F70035308E /* NSData+Storage.m in Sources */,
 				B9CCD1E0198DE3A800F42436 /* main.m in Sources */,
+				B91C9293198EC9F70035308E /* EIImagePickerDelegate.m in Sources */,
+				B9CCD218198DE61900F42436 /* InitViewController.m in Sources */,
+				B91C9297198EC9F70035308E /* UIImage+Resize.m in Sources */,
+				B9CCD230198DE9D500F42436 /* AppraisalSignatureViewController.m in Sources */,
+				B9CCD217198DE61900F42436 /* ECSlidingViewController.m in Sources */,
+				B91C9280198DEF380035308E /* AppraisalViewController.m in Sources */,
+				B9CCD219198DE61900F42436 /* MenuViewController.m in Sources */,
+				B9CCD21B198DE61900F42436 /* MBProgressHUD.m in Sources */,
+				B9CCD22D198DE9C600F42436 /* AppraisalPicturesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +586,7 @@
 				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
 				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DAD10685-0D70-4660-AD6B-94D698B63BD8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,6 +600,7 @@
 				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
 				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DAD10685-0D70-4660-AD6B-94D698B63BD8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +664,7 @@
 				B9CCD204198DE3A900F42436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisalTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +673,7 @@
 				B9CCD207198DE3A900F42436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

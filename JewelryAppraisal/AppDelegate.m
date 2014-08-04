@@ -8,11 +8,17 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
+@synthesize currentappraisal;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    currentappraisal = [[Appraisal alloc] init];
+    
+    [self UserDefaults_GetTemplate];
+    
     return YES;
 }
 							
@@ -41,6 +47,33 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+-(void)UserDefaults_UpdateTemplate{
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:currentappraisal.businessname  forKey:@"businessname"];
+    [defaults setObject:currentappraisal.appraisername forKey:@"appraisername"];
+    [defaults setObject:currentappraisal.appraisercertification forKey:@"appraisercertification"];
+    [defaults setObject:currentappraisal.website forKey:@"website"];
+    [defaults setObject:currentappraisal.address forKey:@"address"];
+    [defaults setObject:currentappraisal.phonenumber forKey:@"phonenumber"];
+    
+    
+    [defaults synchronize];
+}
+
+
+-(void)UserDefaults_GetTemplate{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    currentappraisal.businessname = [defaults objectForKey:@"businessname"];
+    currentappraisal.appraisername = [defaults objectForKey:@"appraisername"];
+    currentappraisal.appraisercertification = [defaults objectForKey:@"appraisercertification"];
+    currentappraisal.website = [defaults objectForKey:@"website"];
+    currentappraisal.address = [defaults objectForKey:@"address"];
+    currentappraisal.address = [defaults objectForKey:@"phonenumber"];
+    
 }
 
 @end

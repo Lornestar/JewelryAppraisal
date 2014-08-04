@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppraisalViewController.h
 //  JewelryAppraisal
 //
 //  Created by Lorne Lantz on 2014-08-02.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AppraisalViewController : UITabBarController
 
 @end
