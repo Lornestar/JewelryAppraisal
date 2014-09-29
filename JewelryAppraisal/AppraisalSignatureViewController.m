@@ -10,6 +10,7 @@
 #import "SignatureView.h"
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "AppraisalViewController.h"
 
 @interface AppraisalSignatureViewController ()
 
@@ -33,21 +34,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     appdel = [UIApplication sharedApplication].delegate;
     
-    //add menubtn & slidemenu
-    self.view.layer.shadowOpacity = 0.75f;
-    self.view.layer.shadowRadius = 10.0f;
-    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    
-    
-    if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
-        self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-    }
-    
-    
-    //[self.view addGestureRecognizer:self.slidingViewController.panGesture];
-
     
    lblsignature.transform = CGAffineTransformMakeRotation(3.14/2);
     btnClear.transform =CGAffineTransformMakeRotation(3.14/2);
@@ -66,11 +55,24 @@
         [sigview setBackgroundColor:[UIColor whiteColor]];
     }    
     [self.view addSubview:sigview];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    //disable the gestures in the tabbar
+    AppraisalViewController *apvc = (AppraisalViewController*)self.parentViewController;
+    while ([apvc view].gestureRecognizers.count) {
+        [[apvc view] removeGestureRecognizer:[[apvc view].gestureRecognizers objectAtIndex:0]];
+    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     appdel.currentappraisal.signature = sigview;
+    
+    AppraisalViewController *apvc = (AppraisalViewController*)self.parentViewController;
+    [apvc.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
 
 - (void)didReceiveMemoryWarning

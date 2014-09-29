@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B9CCD1CF198DE3A800F42436"
-               BuildableName = "JewelryAppraisal.app"
-               BlueprintName = "JewelryAppraisal"
-               ReferencedContainer = "container:JewelryAppraisal.xcodeproj">
+               BuildableName = "Jewelry Appraisal.app"
+               BlueprintName = "Jewelry Appraisal"
+               ReferencedContainer = "container:Jewelry Appraisal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B9CCD1F0198DE3A900F42436"
-               BuildableName = "JewelryAppraisalTests.xctest"
-               BlueprintName = "JewelryAppraisalTests"
-               ReferencedContainer = "container:JewelryAppraisal.xcodeproj">
+               BuildableName = "Jewelry AppraisalTests.xctest"
+               BlueprintName = "Jewelry AppraisalTests"
+               ReferencedContainer = "container:Jewelry Appraisal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B9CCD1CF198DE3A800F42436"
-            BuildableName = "JewelryAppraisal.app"
-            BlueprintName = "JewelryAppraisal"
-            ReferencedContainer = "container:JewelryAppraisal.xcodeproj">
+            BuildableName = "Jewelry Appraisal.app"
+            BlueprintName = "Jewelry Appraisal"
+            ReferencedContainer = "container:Jewelry Appraisal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B9CCD1CF198DE3A800F42436"
-            BuildableName = "JewelryAppraisal.app"
-            BlueprintName = "JewelryAppraisal"
-            ReferencedContainer = "container:JewelryAppraisal.xcodeproj">
+            BuildableName = "Jewelry Appraisal.app"
+            BlueprintName = "Jewelry Appraisal"
+            ReferencedContainer = "container:Jewelry Appraisal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B9CCD1CF198DE3A800F42436"
-            BuildableName = "JewelryAppraisal.app"
-            BlueprintName = "JewelryAppraisal"
-            ReferencedContainer = "container:JewelryAppraisal.xcodeproj">
+            BuildableName = "Jewelry Appraisal.app"
+            BlueprintName = "Jewelry Appraisal"
+            ReferencedContainer = "container:Jewelry Appraisal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

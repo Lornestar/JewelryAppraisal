@@ -13,6 +13,7 @@
 
 @implementation PDFRenderer
 
+
 +(void)drawPDF:(NSString*)fileName
 {
     AppDelegate *appdel = [UIApplication sharedApplication].delegate;
@@ -43,10 +44,13 @@
     int yoffset = 200;
     
 
+    //total width 1700
+    int xtitle = [self getxcenter:50 thetext:appdel.currentappraisal.businessname];
+    
     //business name
     if (appdel.currentappraisal.businessname)
     {
-        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(700, 150+yoffset, 1400, 230) fontsize:50.0f];
+        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(xtitle, 150+yoffset, 1400, 230) fontsize:50.0f];
     }
     
     //appraisal title
@@ -58,7 +62,7 @@
     //description
     if (appdel.currentappraisal.description)
     {
-        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 480 + yoffset, 2100, 350) fontsize:25.0f];
+        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 480 + yoffset, 1500, 350) fontsize:25.0f];
     }
     
     //draw images
@@ -85,19 +89,19 @@
         }
     }
     
-    int currentx = 50;
+    int currentx = 100;
     int currenty = 560;
     for (UIImage *imgtemp in appdel.currentappraisal.picturesarray)
     {
         //loop through images and draw them on
         [self drawImage:imgtemp inRect:CGRectMake(currentx, currenty, width, height)];
-        currentx += width + 10;
+        currentx += width + 20;
     }
     
     //replacement value
     if (appdel.currentappraisal.dollarvalue)
     {
-        [self drawText:[NSString stringWithFormat:@"Retail Replacement Value: $%@", appdel.currentappraisal.dollarvalue] inFrame:CGRectMake(100, 950+yoffset, 1400, 200) fontsize:25.0f];
+        [self drawText:[NSString stringWithFormat:@"Appraised Value: $%@", appdel.currentappraisal.dollarvalue] inFrame:CGRectMake(100, 950+yoffset, 1400, 200) fontsize:25.0f];
     }
     
     //terms of service
@@ -139,19 +143,19 @@
     
     //show website
     if (appdel.currentappraisal.website) {
-        [self drawText:appdel.currentappraisal.website inFrame:CGRectMake(600, 2100, 400, 30) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.website inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.website], 2100, 400, 30) fontsize:20.0f];
     }
     
     //show address
     if (appdel.currentappraisal.address)
     {
-        [self drawText:appdel.currentappraisal.address inFrame:CGRectMake(600, 2130, 400, 30) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.address inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.address], 2130, 400, 30) fontsize:20.0f];
     }
     
     //show phone number
     if (appdel.currentappraisal.phonenumber)
     {
-        [self drawText:appdel.currentappraisal.phonenumber inFrame:CGRectMake(600, 2160, 400, 30) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.phonenumber inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.phonenumber], 2160, 400, 30) fontsize:20.0f];
     }
     
     
@@ -417,4 +421,12 @@
         
     }
     
-}@end
+}
+
++(int)getxcenter:(int)fontsize thetext:(NSString*)thetext
+{
+    int thereturn = 850 - ([thetext length] * (fontsize/2.4))/2;
+    return thereturn;
+}
+
+@end

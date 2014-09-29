@@ -23,6 +23,12 @@
 		B91C92AA198F5A980035308E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92A9198F5A980035308E /* CoreText.framework */; };
 		B91C92AC198F747B0035308E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91C92AB198F747B0035308E /* MessageUI.framework */; };
 		B91C92AF1990085A0035308E /* PreviewPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91C92AE1990085A0035308E /* PreviewPDFViewController.m */; };
+		B924AF0219D8C20D008F69FC /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF0019D8C20D008F69FC /* icon120.png */; };
+		B924AF0319D8C20D008F69FC /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF0119D8C20D008F69FC /* icon180.png */; };
+		B924AF1D19D8D3F7008F69FC /* iconsberlin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF1C19D8D3F7008F69FC /* iconsberlin@2x.png */; };
+		B924AF2119D8D5CB008F69FC /* tabdetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */; };
+		B924AF2319D8D69C008F69FC /* tabpictures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2219D8D69C008F69FC /* tabpictures@2x.png */; };
+		B924AF2519D8D705008F69FC /* tabsignature@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2419D8D705008F69FC /* tabsignature@2x.png */; };
 		B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
 		B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */; };
 		B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
@@ -86,21 +92,27 @@
 		B91C92AB198F747B0035308E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B91C92AD1990085A0035308E /* PreviewPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewPDFViewController.h; sourceTree = "<group>"; };
 		B91C92AE1990085A0035308E /* PreviewPDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewPDFViewController.m; sourceTree = "<group>"; };
-		B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAppraisal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B924AF0019D8C20D008F69FC /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		B924AF0119D8C20D008F69FC /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		B924AF1C19D8D3F7008F69FC /* iconsberlin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconsberlin@2x.png"; sourceTree = "<group>"; };
+		B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabdetails@2x.png"; sourceTree = "<group>"; };
+		B924AF2219D8D69C008F69FC /* tabpictures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabpictures@2x.png"; sourceTree = "<group>"; };
+		B924AF2419D8D705008F69FC /* tabsignature@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsignature@2x.png"; sourceTree = "<group>"; };
+		B9CCD1D0198DE3A800F42436 /* Jewelry Appraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jewelry Appraisal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1D3198DE3A800F42436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B9CCD1D7198DE3A800F42436 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B9CCD1DB198DE3A800F42436 /* JewelryAppraisal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JewelryAppraisal-Info.plist"; sourceTree = "<group>"; };
+		B9CCD1DB198DE3A800F42436 /* Jewelry Appraisal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jewelry Appraisal-Info.plist"; sourceTree = "<group>"; };
 		B9CCD1DD198DE3A800F42436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9CCD1DF198DE3A800F42436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9CCD1E1198DE3A800F42436 /* JewelryAppraisal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JewelryAppraisal-Prefix.pch"; sourceTree = "<group>"; };
+		B9CCD1E1198DE3A800F42436 /* Jewelry Appraisal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jewelry Appraisal-Prefix.pch"; sourceTree = "<group>"; };
 		B9CCD1E2198DE3A800F42436 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9CCD1E3198DE3A800F42436 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B9CCD1E6198DE3A900F42436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9CCD1EB198DE3A900F42436 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JewelryAppraisalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CCD1F1198DE3A900F42436 /* Jewelry AppraisalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jewelry AppraisalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1F2198DE3A900F42436 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B9CCD1FA198DE3A900F42436 /* JewelryAppraisalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JewelryAppraisalTests-Info.plist"; sourceTree = "<group>"; };
+		B9CCD1FA198DE3A900F42436 /* Jewelry AppraisalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jewelry AppraisalTests-Info.plist"; sourceTree = "<group>"; };
 		B9CCD1FC198DE3A900F42436 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9CCD1FE198DE3A900F42436 /* JewelryAppraisalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JewelryAppraisalTests.m; sourceTree = "<group>"; };
 		B9CCD20C198DE61900F42436 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
@@ -150,6 +162,12 @@
 		B91C9281198DF1D90035308E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B924AF2419D8D705008F69FC /* tabsignature@2x.png */,
+				B924AF2219D8D69C008F69FC /* tabpictures@2x.png */,
+				B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */,
+				B924AF1C19D8D3F7008F69FC /* iconsberlin@2x.png */,
+				B924AF0019D8C20D008F69FC /* icon120.png */,
+				B924AF0119D8C20D008F69FC /* icon180.png */,
 				B91C9284198E13E00035308E /* addimageicon.png */,
 				B91C9282198DF1D90035308E /* menuicon.png */,
 			);
@@ -213,8 +231,8 @@
 		B9CCD1D1198DE3A800F42436 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */,
-				B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */,
+				B9CCD1D0198DE3A800F42436 /* Jewelry Appraisal.app */,
+				B9CCD1F1198DE3A900F42436 /* Jewelry AppraisalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,10 +269,10 @@
 			isa = PBXGroup;
 			children = (
 				B91C9281198DF1D90035308E /* Images */,
-				B9CCD1DB198DE3A800F42436 /* JewelryAppraisal-Info.plist */,
+				B9CCD1DB198DE3A800F42436 /* Jewelry Appraisal-Info.plist */,
 				B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */,
 				B9CCD1DF198DE3A800F42436 /* main.m */,
-				B9CCD1E1198DE3A800F42436 /* JewelryAppraisal-Prefix.pch */,
+				B9CCD1E1198DE3A800F42436 /* Jewelry Appraisal-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,7 +289,7 @@
 		B9CCD1F9198DE3A900F42436 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9CCD1FA198DE3A900F42436 /* JewelryAppraisalTests-Info.plist */,
+				B9CCD1FA198DE3A900F42436 /* Jewelry AppraisalTests-Info.plist */,
 				B9CCD1FB198DE3A900F42436 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -346,9 +364,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */ = {
+		B9CCD1CF198DE3A800F42436 /* Jewelry Appraisal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisal" */;
+			buildConfigurationList = B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "Jewelry Appraisal" */;
 			buildPhases = (
 				B9CCD1CC198DE3A800F42436 /* Sources */,
 				B9CCD1CD198DE3A800F42436 /* Frameworks */,
@@ -358,14 +376,14 @@
 			);
 			dependencies = (
 			);
-			name = JewelryAppraisal;
+			name = "Jewelry Appraisal";
 			productName = JewelryAppraisal;
-			productReference = B9CCD1D0198DE3A800F42436 /* JewelryAppraisal.app */;
+			productReference = B9CCD1D0198DE3A800F42436 /* Jewelry Appraisal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9CCD1F0198DE3A900F42436 /* JewelryAppraisalTests */ = {
+		B9CCD1F0198DE3A900F42436 /* Jewelry AppraisalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisalTests" */;
+			buildConfigurationList = B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "Jewelry AppraisalTests" */;
 			buildPhases = (
 				B9CCD1ED198DE3A900F42436 /* Sources */,
 				B9CCD1EE198DE3A900F42436 /* Frameworks */,
@@ -376,9 +394,9 @@
 			dependencies = (
 				B9CCD1F7198DE3A900F42436 /* PBXTargetDependency */,
 			);
-			name = JewelryAppraisalTests;
+			name = "Jewelry AppraisalTests";
 			productName = JewelryAppraisalTests;
-			productReference = B9CCD1F1198DE3A900F42436 /* JewelryAppraisalTests.xctest */;
+			productReference = B9CCD1F1198DE3A900F42436 /* Jewelry AppraisalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -390,12 +408,15 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Lorne Lantz";
 				TargetAttributes = {
+					B9CCD1CF198DE3A800F42436 = {
+						DevelopmentTeam = 6NSG6U54M5;
+					};
 					B9CCD1F0198DE3A900F42436 = {
 						TestTargetID = B9CCD1CF198DE3A800F42436;
 					};
 				};
 			};
-			buildConfigurationList = B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "JewelryAppraisal" */;
+			buildConfigurationList = B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "Jewelry Appraisal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -408,8 +429,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */,
-				B9CCD1F0198DE3A900F42436 /* JewelryAppraisalTests */,
+				B9CCD1CF198DE3A800F42436 /* Jewelry Appraisal */,
+				B9CCD1F0198DE3A900F42436 /* Jewelry AppraisalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,9 +442,15 @@
 			files = (
 				B9CCD1EC198DE3A900F42436 /* Images.xcassets in Resources */,
 				B91C9283198DF1D90035308E /* menuicon.png in Resources */,
+				B924AF2519D8D705008F69FC /* tabsignature@2x.png in Resources */,
+				B924AF0319D8C20D008F69FC /* icon180.png in Resources */,
+				B924AF0219D8C20D008F69FC /* icon120.png in Resources */,
 				B9CCD1DE198DE3A800F42436 /* InfoPlist.strings in Resources */,
 				B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */,
+				B924AF1D19D8D3F7008F69FC /* iconsberlin@2x.png in Resources */,
+				B924AF2319D8D69C008F69FC /* tabpictures@2x.png in Resources */,
 				B91C9285198E13E00035308E /* addimageicon.png in Resources */,
+				B924AF2119D8D5CB008F69FC /* tabdetails@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +507,7 @@
 /* Begin PBXTargetDependency section */
 		B9CCD1F7198DE3A900F42436 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9CCD1CF198DE3A800F42436 /* JewelryAppraisal */;
+			target = B9CCD1CF198DE3A800F42436 /* Jewelry Appraisal */;
 			targetProxy = B9CCD1F6198DE3A900F42436 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -577,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -588,11 +615,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
-				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DAD10685-0D70-4660-AD6B-94D698B63BD8";
+				GCC_PREFIX_HEADER = "JewelryAppraisal/Jewelry Appraisal-Prefix.pch";
+				INFOPLIST_FILE = "JewelryAppraisal/Jewelry Appraisal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "Jewelry Appraisal";
+				PROVISIONING_PROFILE = "6ca730b7-b2de-4ca6-aa97-3f9a0012f32c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -602,11 +632,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
-				INFOPLIST_FILE = "JewelryAppraisal/JewelryAppraisal-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DAD10685-0D70-4660-AD6B-94D698B63BD8";
+				GCC_PREFIX_HEADER = "JewelryAppraisal/Jewelry Appraisal-Prefix.pch";
+				INFOPLIST_FILE = "JewelryAppraisal/Jewelry Appraisal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "Jewelry Appraisal";
+				PROVISIONING_PROFILE = "6ca730b7-b2de-4ca6-aa97-3f9a0012f32c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -626,8 +659,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JewelryAppraisalTests/JewelryAppraisalTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "JewelryAppraisalTests/Jewelry AppraisalTests-Info.plist";
+				PRODUCT_NAME = "Jewelry AppraisalTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -644,8 +677,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JewelryAppraisal/JewelryAppraisal-Prefix.pch";
-				INFOPLIST_FILE = "JewelryAppraisalTests/JewelryAppraisalTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "JewelryAppraisalTests/Jewelry AppraisalTests-Info.plist";
+				PRODUCT_NAME = "Jewelry AppraisalTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -654,7 +687,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "JewelryAppraisal" */ = {
+		B9CCD1CB198DE3A800F42436 /* Build configuration list for PBXProject "Jewelry Appraisal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9CCD200198DE3A900F42436 /* Debug */,
@@ -663,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisal" */ = {
+		B9CCD202198DE3A900F42436 /* Build configuration list for PBXNativeTarget "Jewelry Appraisal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9CCD203198DE3A900F42436 /* Debug */,
@@ -672,7 +705,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "JewelryAppraisalTests" */ = {
+		B9CCD205198DE3A900F42436 /* Build configuration list for PBXNativeTarget "Jewelry AppraisalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9CCD206198DE3A900F42436 /* Debug */,

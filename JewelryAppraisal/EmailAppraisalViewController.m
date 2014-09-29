@@ -105,7 +105,6 @@
     
     NSString *emailTitle = appdel.currentappraisal.title;
     NSString *messageBody = @"";
-    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     mc.mailComposeDelegate = self;
@@ -139,12 +138,23 @@
         mimeType = @"application/pdf";
     }*/
     
-    // Add attachment
-    [mc addAttachmentData:fileData mimeType:mimeType fileName:@"JewelryAppraisal.pdf"];
-    
-    // Present mail view controller on screen
-    [self presentViewController:mc animated:YES completion:NULL];
-    
+    if (mc)
+    {
+        // Add attachment
+        [mc addAttachmentData:fileData mimeType:mimeType fileName:@"JewelryAppraisal.pdf"];
+        
+        // Present mail view controller on screen
+        [self presentViewController:mc animated:YES completion:NULL];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                        message:@"This device cannot send emails"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error

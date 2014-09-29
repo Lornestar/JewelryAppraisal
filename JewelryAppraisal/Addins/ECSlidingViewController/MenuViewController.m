@@ -187,7 +187,7 @@
         appdel.currentappraisal.dollarvalue = @"";
         appdel.currentappraisal.description = @"";
         appdel.currentappraisal.picturesarray = nil;
-        appdel.currentappraisal.signature = [[SignatureView alloc] init];
+        appdel.currentappraisal.signature = nil;
         
         [self GotoViewController:@"Appraisal"];
     }
