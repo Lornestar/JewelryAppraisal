@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Appraisals" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appraisal_key" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="appraisercertification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appraisername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="businessname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="datesaved" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="description2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dollarvalue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonenumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signaturedata" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="terms" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="terms_default" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pictures" syncable="YES">
+        <attribute name="appraisal_key" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Appraisals" positionX="-63" positionY="-18" width="128" height="253"/>
+        <element name="Pictures" positionX="-54" positionY="90" width="128" height="73"/>
+    </elements>
+</model>

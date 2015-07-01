@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPhone;
 @property (strong, nonatomic) IBOutlet UIView *vwTextfields;
 @property (strong, nonatomic) IBOutlet UITextField *txtAddress;
+@property (strong, nonatomic) IBOutlet UITextView *txtterms;
 
 - (IBAction)txtBusinessName_Done:(id)sender;
 - (IBAction)txtAppraisersName_Done:(id)sender;

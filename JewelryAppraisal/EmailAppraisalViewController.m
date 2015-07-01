@@ -50,6 +50,8 @@
     [PDFRenderer drawPDF:[self getPDFFileName]];
     
     
+   
+    
 /*    UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     
     NSURL *url = [NSURL fileURLWithPath:[self getPDFFileName]];
@@ -169,6 +171,12 @@
             break;
         case MFMailComposeResultSent:
             NSLog(@"Mail sent");
+            
+            //add to saved list of appraisals
+            [appdel InsertAppraisal:appdel.currentappraisal];
+            [appdel DisplayAlert:@"Email Sent"];
+            [appdel TrackEvent:@"Email Sent" properties:NULL];
+            
             break;
         case MFMailComposeResultFailed:
             NSLog(@"Mail sent failure: %@", [error localizedDescription]);
@@ -179,7 +187,8 @@
     
     // Close the Mail Interface
     [self dismissViewControllerAnimated:YES completion:NULL];
-    [self.slidingViewController anchorTopViewTo:ECRight];
+    //[self.slidingViewController anchorTopViewTo:ECRight];
+    [(MenuViewController*)self.slidingViewController.underLeftViewController GotoViewController:@"Appraisal"];
 }
 
 @end

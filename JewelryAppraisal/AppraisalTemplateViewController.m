@@ -18,7 +18,7 @@
 @end
 
 @implementation AppraisalTemplateViewController
-@synthesize txtAddress,txtAppraiserCertification,appdel,txtAppraisersName,txtBusinessName,txtWebsite,txtPhone,vwTextfields;
+@synthesize txtAddress,txtAppraiserCertification,appdel,txtAppraisersName,txtBusinessName,txtWebsite,txtPhone,vwTextfields, txtterms;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -83,7 +83,29 @@
         txtPhone.text = appdel.currentappraisal.phonenumber;
     }
     
-        
+    if (appdel.currentappraisal.terms.length > 0)
+    {
+        txtterms.text = appdel.currentappraisal.terms;
+    }
+    else
+    {
+        txtterms.text = appdel.currentappraisal.terms_default;
+    }
+    
+    UITapGestureRecognizer *taprecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [self.view addGestureRecognizer:taprecognizer];
+}
+
+-(void)tap:(UIGestureRecognizer*)gr
+{
+    [txtAddress resignFirstResponder];
+    [txtAppraiserCertification resignFirstResponder];
+    [txtAppraisersName resignFirstResponder];
+    [txtBusinessName resignFirstResponder];
+    [txtPhone resignFirstResponder];
+    [txtWebsite resignFirstResponder];
+    [txtterms resignFirstResponder];
+    [self ResetTextFields:0];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -95,15 +117,25 @@
     appdel.currentappraisal.address = txtAddress.text;
     appdel.currentappraisal.phonenumber = txtPhone.text;
     
+    if ([txtterms.text isEqualToString:appdel.currentappraisal.terms_default])
+    {
+        //don't update, not different
+        appdel.currentappraisal.terms = @"";
+    }
+    else
+    {
+        appdel.currentappraisal.terms = txtterms.text;
+    }
+    
     [appdel UserDefaults_UpdateTemplate];
 }
 
 -(void)ResetTextFields:(int)index
 {
-    //x,y = 20,67
+    //x,y = 20,61
     
     int x = 160;
-    int y = 240;
+    int y = 268;
     
     switch(index)
     {
@@ -115,6 +147,9 @@
             break;
         case 5:
             y -= 160;
+            break;
+        case 6:
+            y -=220;
             break;
     }
     vwTextfields.center = CGPointMake(x, y);
@@ -209,7 +244,10 @@
         [textView becomeFirstResponder];
         [self ResetTextFields:4];
     }
-    
+    else if (textView.tag == 106)
+    {
+        [self ResetTextFields:6];
+    }
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView

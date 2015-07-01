@@ -33,7 +33,6 @@
     // Do any additional setup after loading the view.
     
     
-    
     if (appdel.currentappraisal.picturesarray)
     {
         picturesarray = (NSMutableArray*)appdel.currentappraisal.picturesarray;
@@ -41,6 +40,30 @@
     else{
         picturesarray = [[NSMutableArray alloc] init];
     }
+    
+    NSMutableDictionary *tempdict = [[NSMutableDictionary alloc] init];
+    if (appdel.currentappraisal.title)
+    {
+        [tempdict setObject:appdel.currentappraisal.title forKeyedSubscript:@"title"];
+    }
+    if (appdel.currentappraisal.description)
+    {
+        [tempdict setObject:appdel.currentappraisal.description forKeyedSubscript:@"description"];
+    }
+    if (appdel.currentappraisal.dollarvalue)
+    {
+        [tempdict setObject:appdel.currentappraisal.dollarvalue forKeyedSubscript:@"dollarvalue"];
+    }
+    if (picturesarray)
+    {
+        [tempdict setObject:picturesarray forKeyedSubscript:@"picsarray"];
+    }
+    if (appdel.currentappraisal.appraisal_key)
+    {
+        [tempdict setObject:appdel.currentappraisal.appraisal_key forKeyedSubscript:@"appraisal_key"];
+    }
+    
+    [appdel TrackEvent:@"Loaded Pic Screen" properties:picturesarray];
 }
 
 -(void)viewDidAppear:(BOOL)animated

@@ -15,4 +15,5 @@
 @property (nonatomic, strong) AppDelegate *appdel;
 -(void)ReloadRegister;
 
+-(void)GotoViewController:(NSString*)identifier;
 @end

@@ -29,6 +29,14 @@
 		B924AF2119D8D5CB008F69FC /* tabdetails@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */; };
 		B924AF2319D8D69C008F69FC /* tabpictures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2219D8D69C008F69FC /* tabpictures@2x.png */; };
 		B924AF2519D8D705008F69FC /* tabsignature@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B924AF2419D8D705008F69FC /* tabsignature@2x.png */; };
+		B93A22FE1A54826100A5420E /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93A22FD1A54826100A5420E /* HelpViewController.m */; };
+		B93A23001A548DC800A5420E /* ios-close-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B93A22FF1A548DC800A5420E /* ios-close-button.png */; };
+		B9A2C45E1A437662008935EC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2C45D1A437662008935EC /* Crashlytics.framework */; };
+		B9A662AA1A3413930042C05C /* SentAppraisalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A662A91A3413930042C05C /* SentAppraisalsViewController.m */; };
+		B9A662AC1A3425E20042C05C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A662AB1A3425E20042C05C /* CoreData.framework */; };
+		B9A662B21A34D2BD0042C05C /* dbAppraisals.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A662B11A34D2BD0042C05C /* dbAppraisals.m */; };
+		B9A662B51A34DB9C0042C05C /* Appraisal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9A662B31A34DB9C0042C05C /* Appraisal.xcdatamodeld */; };
+		B9A662B81A3507B50042C05C /* dbPictures.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A662B71A3507B50042C05C /* dbPictures.m */; };
 		B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D3198DE3A800F42436 /* Foundation.framework */; };
 		B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */; };
 		B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CCD1D7198DE3A800F42436 /* UIKit.framework */; };
@@ -98,6 +106,18 @@
 		B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabdetails@2x.png"; sourceTree = "<group>"; };
 		B924AF2219D8D69C008F69FC /* tabpictures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabpictures@2x.png"; sourceTree = "<group>"; };
 		B924AF2419D8D705008F69FC /* tabsignature@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsignature@2x.png"; sourceTree = "<group>"; };
+		B93A22FC1A54826100A5420E /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		B93A22FD1A54826100A5420E /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		B93A22FF1A548DC800A5420E /* ios-close-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-close-button.png"; sourceTree = "<group>"; };
+		B9A2C45D1A437662008935EC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B9A662A81A3413930042C05C /* SentAppraisalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentAppraisalsViewController.h; sourceTree = "<group>"; };
+		B9A662A91A3413930042C05C /* SentAppraisalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SentAppraisalsViewController.m; sourceTree = "<group>"; };
+		B9A662AB1A3425E20042C05C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B9A662B01A34D2BD0042C05C /* dbAppraisals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbAppraisals.h; sourceTree = "<group>"; };
+		B9A662B11A34D2BD0042C05C /* dbAppraisals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbAppraisals.m; sourceTree = "<group>"; };
+		B9A662B41A34DB9C0042C05C /* Appraisal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Appraisal.xcdatamodel; sourceTree = "<group>"; };
+		B9A662B61A3507B50042C05C /* dbPictures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbPictures.h; sourceTree = "<group>"; };
+		B9A662B71A3507B50042C05C /* dbPictures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbPictures.m; sourceTree = "<group>"; };
 		B9CCD1D0198DE3A800F42436 /* Jewelry Appraisal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jewelry Appraisal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CCD1D3198DE3A800F42436 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9CCD1D5198DE3A800F42436 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,11 +158,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A662AC1A3425E20042C05C /* CoreData.framework in Frameworks */,
 				B91C92AC198F747B0035308E /* MessageUI.framework in Frameworks */,
 				B91C92AA198F5A980035308E /* CoreText.framework in Frameworks */,
 				B9CCD1D6198DE3A800F42436 /* CoreGraphics.framework in Frameworks */,
 				B9CCD1D8198DE3A800F42436 /* UIKit.framework in Frameworks */,
 				B9CCD1D4198DE3A800F42436 /* Foundation.framework in Frameworks */,
+				B9A2C45E1A437662008935EC /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +184,7 @@
 		B91C9281198DF1D90035308E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B93A22FF1A548DC800A5420E /* ios-close-button.png */,
 				B924AF2419D8D705008F69FC /* tabsignature@2x.png */,
 				B924AF2219D8D69C008F69FC /* tabpictures@2x.png */,
 				B924AF2019D8D5CB008F69FC /* tabdetails@2x.png */,
@@ -221,6 +244,7 @@
 		B9CCD1C7198DE3A800F42436 = {
 			isa = PBXGroup;
 			children = (
+				B9A2C45D1A437662008935EC /* Crashlytics.framework */,
 				B9CCD1D9198DE3A800F42436 /* JewelryAppraisal */,
 				B9CCD1F8198DE3A900F42436 /* JewelryAppraisalTests */,
 				B9CCD1D2198DE3A800F42436 /* Frameworks */,
@@ -240,6 +264,7 @@
 		B9CCD1D2198DE3A800F42436 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9A662AB1A3425E20042C05C /* CoreData.framework */,
 				B91C92AB198F747B0035308E /* MessageUI.framework */,
 				B91C92A9198F5A980035308E /* CoreText.framework */,
 				B9CCD1D3198DE3A800F42436 /* Foundation.framework */,
@@ -273,6 +298,7 @@
 				B9CCD1DC198DE3A800F42436 /* InfoPlist.strings */,
 				B9CCD1DF198DE3A800F42436 /* main.m */,
 				B9CCD1E1198DE3A800F42436 /* Jewelry Appraisal-Prefix.pch */,
+				B9A662B31A34DB9C0042C05C /* Appraisal.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -312,6 +338,10 @@
 				B91C92A3198F399E0035308E /* EmailAppraisalViewController.m */,
 				B91C92AD1990085A0035308E /* PreviewPDFViewController.h */,
 				B91C92AE1990085A0035308E /* PreviewPDFViewController.m */,
+				B9A662A81A3413930042C05C /* SentAppraisalsViewController.h */,
+				B9A662A91A3413930042C05C /* SentAppraisalsViewController.m */,
+				B93A22FC1A54826100A5420E /* HelpViewController.h */,
+				B93A22FD1A54826100A5420E /* HelpViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +351,10 @@
 			children = (
 				B91C9298198ED3B70035308E /* Appraisal.h */,
 				B91C9299198ED3B70035308E /* Appraisal.m */,
+				B9A662B01A34D2BD0042C05C /* dbAppraisals.h */,
+				B9A662B11A34D2BD0042C05C /* dbAppraisals.m */,
+				B9A662B61A3507B50042C05C /* dbPictures.h */,
+				B9A662B71A3507B50042C05C /* dbPictures.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -371,6 +405,7 @@
 				B9CCD1CC198DE3A800F42436 /* Sources */,
 				B9CCD1CD198DE3A800F42436 /* Frameworks */,
 				B9CCD1CE198DE3A800F42436 /* Resources */,
+				B9B65F7D1A415FAD0094CD91 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -446,6 +481,7 @@
 				B924AF0319D8C20D008F69FC /* icon180.png in Resources */,
 				B924AF0219D8C20D008F69FC /* icon120.png in Resources */,
 				B9CCD1DE198DE3A800F42436 /* InfoPlist.strings in Resources */,
+				B93A23001A548DC800A5420E /* ios-close-button.png in Resources */,
 				B9CCD1E7198DE3A900F42436 /* Main.storyboard in Resources */,
 				B924AF1D19D8D3F7008F69FC /* iconsberlin@2x.png in Resources */,
 				B924AF2319D8D69C008F69FC /* tabpictures@2x.png in Resources */,
@@ -464,6 +500,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9B65F7D1A415FAD0094CD91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 92d35e63122c39739dd9764312fa21104df3be98 012e634328b45b1de31bce0e9b6b961e7a2d9e738f1897d76b955302ff495fb4";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9CCD1CC198DE3A800F42436 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -473,8 +525,11 @@
 				B91C92A1198F1FCF0035308E /* AppraisalTemplateViewController.m in Sources */,
 				B9CCD1E4198DE3A800F42436 /* AppDelegate.m in Sources */,
 				B91C929A198ED3B70035308E /* Appraisal.m in Sources */,
+				B9A662AA1A3413930042C05C /* SentAppraisalsViewController.m in Sources */,
 				B91C92A8198F3C050035308E /* PDFRenderer.m in Sources */,
+				B9A662B81A3507B50042C05C /* dbPictures.m in Sources */,
 				B91C929E198EECEC0035308E /* SignatureView.m in Sources */,
+				B9A662B21A34D2BD0042C05C /* dbAppraisals.m in Sources */,
 				B91C92A4198F399E0035308E /* EmailAppraisalViewController.m in Sources */,
 				B91C9296198EC9F70035308E /* StandardPaths.m in Sources */,
 				B9CCD22A198DE98000F42436 /* AppraisalDetailsViewController.m in Sources */,
@@ -482,12 +537,14 @@
 				B91C92AF1990085A0035308E /* PreviewPDFViewController.m in Sources */,
 				B91C9295198EC9F70035308E /* NSData+Storage.m in Sources */,
 				B9CCD1E0198DE3A800F42436 /* main.m in Sources */,
+				B93A22FE1A54826100A5420E /* HelpViewController.m in Sources */,
 				B91C9293198EC9F70035308E /* EIImagePickerDelegate.m in Sources */,
 				B9CCD218198DE61900F42436 /* InitViewController.m in Sources */,
 				B91C9297198EC9F70035308E /* UIImage+Resize.m in Sources */,
 				B9CCD230198DE9D500F42436 /* AppraisalSignatureViewController.m in Sources */,
 				B9CCD217198DE61900F42436 /* ECSlidingViewController.m in Sources */,
 				B91C9280198DEF380035308E /* AppraisalViewController.m in Sources */,
+				B9A662B51A34DB9C0042C05C /* Appraisal.xcdatamodeld in Sources */,
 				B9CCD219198DE61900F42436 /* MenuViewController.m in Sources */,
 				B9CCD21B198DE61900F42436 /* MBProgressHUD.m in Sources */,
 				B9CCD22D198DE9C600F42436 /* AppraisalPicturesViewController.m in Sources */,
@@ -556,7 +613,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jennifer POWERS (3Y967KWHZP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jennifer POWERS (3Y967KWHZP)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -572,8 +630,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "91fc4a80-04f3-4df7-9ec4-c586ef3720af";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -594,7 +653,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jennifer POWERS (3Y967KWHZP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jennifer POWERS (3Y967KWHZP)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -604,7 +664,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PROVISIONING_PROFILE = "91fc4a80-04f3-4df7-9ec4-c586ef3720af";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -615,14 +676,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lorne Lantz (PKFLF695L8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lorne Lantz (PKFLF695L8)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelryAppraisal/Addins",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JewelryAppraisal/Jewelry Appraisal-Prefix.pch";
 				INFOPLIST_FILE = "JewelryAppraisal/Jewelry Appraisal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelryAppraisal/Addins/Mixpanel",
+				);
 				PRODUCT_NAME = "Jewelry Appraisal";
-				PROVISIONING_PROFILE = "6ca730b7-b2de-4ca6-aa97-3f9a0012f32c";
+				PROVISIONING_PROFILE = "3c863ae0-c5a1-465d-9be8-24ac4699b8c6";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -632,14 +703,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lorne Lantz (6NSG6U54M5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lorne Lantz (PKFLF695L8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lorne Lantz (PKFLF695L8)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelryAppraisal/Addins",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JewelryAppraisal/Jewelry Appraisal-Prefix.pch";
 				INFOPLIST_FILE = "JewelryAppraisal/Jewelry Appraisal-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JewelryAppraisal/Addins/Mixpanel",
+				);
 				PRODUCT_NAME = "Jewelry Appraisal";
-				PROVISIONING_PROFILE = "6ca730b7-b2de-4ca6-aa97-3f9a0012f32c";
+				PROVISIONING_PROFILE = "3c863ae0-c5a1-465d-9be8-24ac4699b8c6";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -715,6 +796,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9A662B31A34DB9C0042C05C /* Appraisal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9A662B41A34DB9C0042C05C /* Appraisal.xcdatamodel */,
+			);
+			currentVersion = B9A662B41A34DB9C0042C05C /* Appraisal.xcdatamodel */;
+			path = Appraisal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B9CCD1C8198DE3A800F42436 /* Project object */;
 }

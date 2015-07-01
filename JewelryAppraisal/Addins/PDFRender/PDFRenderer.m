@@ -41,7 +41,7 @@
     
     [self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];*/
     
-    int yoffset = 200;
+    int yoffset = 0;
     
 
     //total width 1700
@@ -50,19 +50,20 @@
     //business name
     if (appdel.currentappraisal.businessname)
     {
-        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(xtitle, 150+yoffset, 1400, 230) fontsize:50.0f];
+        [self drawText:appdel.currentappraisal.businessname inFrame:CGRectMake(xtitle, 130+yoffset, 1400, 60) fontsize:50.0f];
     }
     
     //appraisal title
     if (appdel.currentappraisal.title)
     {
-        [self drawText:appdel.currentappraisal.title inFrame:CGRectMake(100, 440, 1000, 30) fontsize:30.0f];
+        xtitle = [self getxcenter:40 thetext:appdel.currentappraisal.title];
+        [self drawText:appdel.currentappraisal.title inFrame:CGRectMake(xtitle, 200, 1000, 45) fontsize:40.0f];
     }
     
     //description
     if (appdel.currentappraisal.description)
     {
-        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 480 + yoffset, 1500, 350) fontsize:25.0f];
+        [self drawText:appdel.currentappraisal.description inFrame:CGRectMake(100, 620 + yoffset, 1500, 350) fontsize:30.0f];
     }
     
     //draw images
@@ -90,7 +91,7 @@
     }
     
     int currentx = 100;
-    int currenty = 560;
+    int currenty = 740;
     for (UIImage *imgtemp in appdel.currentappraisal.picturesarray)
     {
         //loop through images and draw them on
@@ -101,12 +102,19 @@
     //replacement value
     if (appdel.currentappraisal.dollarvalue)
     {
-        [self drawText:[NSString stringWithFormat:@"Appraised Value: $%@", appdel.currentappraisal.dollarvalue] inFrame:CGRectMake(100, 950+yoffset, 1400, 200) fontsize:25.0f];
+        if (appdel.currentappraisal.dollarvalue.length > 0)
+        {
+            [self drawText:[NSString stringWithFormat:@"Appraised Value: $%@", appdel.currentappraisal.dollarvalue] inFrame:CGRectMake(100, 1360+yoffset, 1400, 200) fontsize:25.0f];
+        }
     }
     
     //terms of service
-    NSString *terms = @"I have personally examined the above described article(s) and have found each in good condition unless otherwise noted, and does not require any repairs at this time with the values and description as listed in this appraisal being correct to the best of my knowledge and belief, based on present day market values and accepted appraisal procedures in accordance with the standards of the Gemological Institute of America (GIA). Mountings may prohibit precise observation of gem quality and weight; it must be understood that all data pertaining to mounted gems can only be considered as provisional. Additionally jewelry appraisal and valuation is not an exact science, but a subjective professional viewpoint, estimates of value and quality may necessarily constitute error on the part of the appraiser. Therefore due to the very subjective nature of appraisals and evaluations, statements, and data contained herein cannot be construed as guarantee or warranty. Weight of the stones is approximate unless otherwise indicated. When multiple stones of that same type, measurement and/or weight is and average. Chemical composition of gemstones may determine variety but does not indicate the nature or matrix of creation (synthetic gemstones vs. naturally occurring gemstones made from mined material) unless otherwise stated. Colored stone purchasers should be aware that natural gemstones are processed from the time they are extracted from the earth, by one or more traditionally accepted trade practices. Some gemstones on this appraisal may have been subjected to a stable and possibly undetectable enhancement process. All relevant information will be readily provided to the best of our knowledge. Estimated value is based on quality grade (cut, clarity, color, and carat weight) in conjunction with published market values. This is an appraisal to be used for insurance purposes only. The above is a description and estimated replacement valuation of the item submitted for appraisal. The value was determined by systematic examination of the gems, metal or other materials and the method used and quality of construction. The conclusions drawn are the subjective opinions of these qualities and other estimations. The examination was accomplished using appropriate instruments and tests conducted within the limitations imposed by the make-up of the item. Instruments used: GIA Mark VII Gemolite, DiamondLite (for color/fluoresence), Refractometer, Polariscope, Table Gauge, and Leverage Gauge. The values determined for above described item(s) were based on “The Guide”, by Gemworld International, and Rapaport Diamond pricing guide. This appraisal should not be used as a definitive guide in comparison shopping. Neither this store nor any of its employees assumes any liability with respect to any action that may be taken on the basis of this appraisal. The use of this appraisal in public advertising is forbidden. This appraisal is for replacement evaluations only and is not an offer to purchase. Evaluations do not include sales tax where applicable.";
-    [self drawText:terms inFrame:CGRectMake(100, 1100+yoffset, 1400, 300) fontsize:13.0f];
+    NSString *terms = appdel.currentappraisal.terms_default;
+    if (appdel.currentappraisal.terms.length > 0)
+    {
+        terms = appdel.currentappraisal.terms;
+    }
+    [self drawText:terms inFrame:CGRectMake(100, 1560+yoffset, 1400, 300) fontsize:13.0f];
     
     
     //show signature
@@ -115,13 +123,13 @@
         UIImage * PortraitImage = [[UIImage alloc] initWithCGImage: appdel.currentappraisal.signature.image.CGImage
                                                              scale: 1.0
                                                        orientation: UIImageOrientationLeft];
-        [self drawImage:PortraitImage inRect:CGRectMake(100, 1220, 600, 400) ];
+        [self drawImage:PortraitImage inRect:CGRectMake(100, 1490, 500, 250) ];
     }
     
     //show appraiser's name
     if (appdel.currentappraisal.appraisername)
     {
-        [self drawText:appdel.currentappraisal.appraisername inFrame:CGRectMake(100, 1850, 1400, 100) fontsize:25.0f];
+        [self drawText:appdel.currentappraisal.appraisername inFrame:CGRectMake(100, 1920, 1400, 100) fontsize:25.0f];
     }
     
     //show today's date
@@ -131,9 +139,9 @@
     dateFormatter.dateFormat=@"MMMM";
     NSString *monthString = [[dateFormatter stringFromDate:currDate] capitalizedString];
     
-    [dateFormatter setDateFormat:@"MM YYYY"];
+    [dateFormatter setDateFormat:@"dd, YYYY"];
     NSString *dateString = [NSString stringWithFormat:@"%@ %@",monthString, [dateFormatter stringFromDate:currDate]];
-    [self drawText:dateString inFrame:CGRectMake(1000, 1850, 400, 100) fontsize:25.0f];
+    [self drawText:dateString inFrame:CGRectMake(1200, 1920, 400, 100) fontsize:25.0f];
     
     //show appraiser's accolades
     if (appdel.currentappraisal.appraisercertification)
@@ -143,19 +151,28 @@
     
     //show website
     if (appdel.currentappraisal.website) {
-        [self drawText:appdel.currentappraisal.website inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.website], 2100, 400, 30) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.website inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.website], 2100, 1500, 30) fontsize:20.0f];
     }
     
     //show address
     if (appdel.currentappraisal.address)
     {
-        [self drawText:appdel.currentappraisal.address inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.address], 2130, 400, 30) fontsize:20.0f];
+        [self drawText:appdel.currentappraisal.address inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.address], 2130, 1500, 30) fontsize:20.0f];
     }
     
     //show phone number
     if (appdel.currentappraisal.phonenumber)
     {
-        [self drawText:appdel.currentappraisal.phonenumber inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.phonenumber], 2160, 400, 30) fontsize:20.0f];
+        NSString *tempphone;
+        if (appdel.currentappraisal.phonenumber.length>6)
+        {
+            tempphone = [NSString stringWithFormat:@"%@-%@-%@", [appdel.currentappraisal.phonenumber substringToIndex:3], [appdel.currentappraisal.phonenumber substringWithRange:NSMakeRange(4, 3)], [appdel.currentappraisal.phonenumber substringFromIndex:[appdel.currentappraisal.phonenumber length]-4]];
+            
+        }
+        else{
+            tempphone = appdel.currentappraisal.phonenumber;
+        }
+         [self drawText:tempphone inFrame:CGRectMake([self getxcenter:20 thetext:appdel.currentappraisal.phonenumber], 2160, 1500, 30) fontsize:20.0f];
     }
     
     

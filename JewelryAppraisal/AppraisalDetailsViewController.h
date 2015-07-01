@@ -14,10 +14,13 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtDollarValue;
 @property (strong, nonatomic) IBOutlet UITextView *txtDescription;
 @property (nonatomic, strong) AppDelegate *appdel;
+@property (strong, nonatomic) IBOutlet UIView *vwControls;
 
 - (IBAction)txtTitle_Done:(id)sender;
 - (IBAction)txtDollarValue_Done:(id)sender;
 - (IBAction)btnCloseKeyboard_Clicked:(id)sender;
 - (IBAction)btnMenu_Clicked:(id)sender;
+- (IBAction)btnClear_Appraisal:(id)sender;
+- (IBAction)btnhelp_Clicked:(id)sender;
 
 @end

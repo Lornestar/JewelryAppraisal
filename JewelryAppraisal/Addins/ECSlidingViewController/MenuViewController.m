@@ -50,7 +50,7 @@
 
 -(void)UpdateMenuItems:(UIViewController*)thenewvc{
 
-    self.menu = [NSArray arrayWithObjects:@"Edit Appraisal", @"Clear Appraisal", @"Sent Appraisals", @"Appraisal Template", @"Email Appraisal", @"Preview PDF", nil];
+    self.menu = [NSArray arrayWithObjects:@"Edit Appraisal", @"Appraisal Template", @"Email Appraisal", @"Preview PDF", @"Sent Appraisals", @"Help", nil];
     
     /*
     if ([thenewvc isKindOfClass:[RegisterViewController class]]){
@@ -183,11 +183,7 @@
     }
     else if ([identifier isEqualToString:@"Clear Appraisal"])
     {
-        appdel.currentappraisal.title = @"";
-        appdel.currentappraisal.dollarvalue = @"";
-        appdel.currentappraisal.description = @"";
-        appdel.currentappraisal.picturesarray = nil;
-        appdel.currentappraisal.signature = nil;
+        
         
         [self GotoViewController:@"Appraisal"];
     }
@@ -202,6 +198,14 @@
     else if ([identifier isEqualToString:@"Preview PDF"])
     {
         [self GotoViewController:@"PreviewPDF"];
+    }
+    else if ([identifier isEqualToString:@"Sent Appraisals"])
+    {
+        [self GotoViewController:@"Sent"];
+    }
+    else if ([identifier isEqualToString:@"Help"])
+    {
+        [self GotoViewController:@"Help"];
     }
     
 }
