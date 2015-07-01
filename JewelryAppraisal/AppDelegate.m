@@ -26,11 +26,6 @@
     
     [Crashlytics startWithAPIKey:@"92d35e63122c39739dd9764312fa21104df3be98"];
     
-    // Initialize the library with your
-    // Mixpanel project token, MIXPANEL_TOKEN
-    //[Mixpanel sharedInstanceWithToken:@"69f92fde2d6de4982202d3bf72132750"];
-    
-    [self testAuth];
     
     return YES;
 }
@@ -365,26 +360,6 @@
     */
 }
 
--(void)testAuth
-{
-    // Send a synchronous request
-    NSURLRequest * urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://api.powertoremit.com/jewelry"]];
-    NSURLResponse * response = nil;
-    NSError * error = nil;
-    NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
-                                          returningResponse:&response
-                                                      error:&error];
-    
-    if (error == nil)
-    {
-        // Parse data here
-       NSString *parse =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        if ([parse rangeOfString:@"killbill"].location == NSNotFound) {
-            
-        } else {
-                int *x = NULL; *x = 42;
-        }
-    }
-}
+
 
 @end
